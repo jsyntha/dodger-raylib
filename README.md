@@ -1,65 +1,44 @@
-# dodger-raylib
-A simple C++ game using raylib where you dodge randomly spawning shapes while the difficulty increases over time. The goal is to survive as long as possible and achieve the highest score!
+# Dodger-raylib 🎮
 
-🎮 Gameplay
+A simple **C++ game** built using **Raylib**, where you dodge incoming shapes as they speed up over time. The goal is to survive as long as possible and beat your high score!
 
-Control a red circle (the player) using WASD.
+## 📌 Features
+- **Dodge incoming shapes**: Avoid them as they move toward you.
+- **Increasing difficulty**: Shapes get faster as the game progresses.
+- **Score Tracking**: The game records your highest score.
+- **Fullscreen Support**: Toggle fullscreen with `Alt + Enter`.
+- **FPS Display**: Show or hide FPS with `1`.
 
-Avoid the colored shapes that spawn randomly and move toward you.
+## 🎮 Controls
+| Key | Action |
+|-----|--------|
+| `WASD` | Move the player |
+| `Enter` | Start the game |
+| `Alt + Enter` | Toggle fullscreen |
+| `1` | Toggle FPS display |
+| `Esc` | Exit game |
 
-The longer you survive, the faster the shapes become.
+## 🛠 Installation & Running the Game
+### ✅ **Option 1: Compiling from Source**
+1. **Install Raylib**:  
+   Download Raylib from [Raylib’s official website](https://www.raylib.com/) or install via vcpkg:
+   ```sh
+   vcpkg install raylib
+   ```
+2. **Add Raylib to Your Project**:
+   - Add `raylib/include` to **Include Directories**.
+   - Add `raylib/lib` to **Library Directories**.
+   - Link `raylib.lib` and `WinMM.lib` in **Additional Dependencies**.
 
-Press Enter to start the game.
+3. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/jsyntha/dodger-raylib.git
+   cd dodger-raylib
+   ```
 
-Press Alt + Enter to toggle fullscreen mode.
+4. **Open in Visual Studio**:
+   - Open the `.sln` file.
+   - Configure dependencies as listed above.
 
-Press 1 to toggle FPS display.
-
-Press Escape to quit the game.
-
-📌 Features
-
-Smooth movement and collision detection.
-
-Dynamic difficulty scaling – shapes increase in speed over time.
-
-Game over and restart system.
-
-Custom rendering using RenderTexture2D for improved visual scaling.
-
-Fullscreen toggle and window centering.
-
-Score tracking with high score display.
-
-🛠️ Dependencies
-
-This project requires raylib. Make sure you have it installed before running the game.
-
-Installing raylib
-
-Windows (MSVC):
-
-Download the latest raylib release from raylib official site.
-
-Add raylib/include to your Additional Include Directories.
-
-Add raylib/lib to your Additional Library Directories.
-
-Link raylib.lib and WinMM.lib in Additional Dependencies.
-
-🚀 Building and Running
-
-Windows (Visual Studio)
-
-Clone the repository:
-
-git clone https://github.com/jsyntha/dodger-raylib.git
-cd dodger-raylib
-
-Open the Visual Studio solution (.sln) or create a new C++ project.
-
-Add raylib.lib; WinMM.lib; to Linker -> Input -> Additional Dependencies.
-
-Set up Include and Library directories as mentioned above.
-
-Build and run the project!
+5. **Build & Run**:
+   - Press **F5** to build and start the game.
